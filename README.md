@@ -3,7 +3,7 @@ Chargify
 
 Follow these directions to set up recurring commissions from Chargify for your Referral (or Affiliate) program.
 
-**You must also have the ambassador javascript snippet on your payment success page, to record the initial commission**
+NOTE: **You must also have the ambassador javascript snippet on your payment success page, to record the initial commission.**
 
 1) Go to Chargify -> Settings -> Webhooks
 

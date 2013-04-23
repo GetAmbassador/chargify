@@ -36,8 +36,10 @@ class Ambassador_chargify {
 
 			$data = array(
 				'campaign_uid'	=> $this->campaign_uid,
+				'revenue'		=> $payload['subscription']['balance_in_cents']/100,
 				'email'			=> $payload['subscription']['customer']['email'],
-				'revenue'		=> $payload['subscription']['balance_in_cents']/100
+				'first_name'	=> $payload['subscription']['customer']['first_name'],
+				'last_name'		=> $payload['subscription']['customer']['last_name']
 			);
 			
 			$data = http_build_query($data);

@@ -10,7 +10,7 @@ chargify
 
 ![](images/chargify_webhook_renewal.png?raw=true)
 
-2 Add Ambassador_chargify.php file to your libraries folder.
+2 Add ambassador_chargify.php file to your libraries folder.
 
 3 Set values for $username, $api_key and $campaign_uid variables.
 

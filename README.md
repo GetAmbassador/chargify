@@ -8,7 +8,7 @@ chargify
 	* Check "Renewal Success" in "Webhooks subscriptions"
 	* Save webhooks settings
 
-![](images/chargify_webhook_renewal.png?raw=true)
+	![](images/chargify_webhook_renewal.png?raw=true)
 
 2. Add Ambassador_chargify.php file to your libraries folder.
 
@@ -19,7 +19,7 @@ chargify
 	* https://getambassador.com/c/general
 	* https://getambassador.com/c/campaigns
 
-4 In your function which handles webhook data add this code:
+4. In your function which handles webhook data add this code:
 
 4.1 PHP
 

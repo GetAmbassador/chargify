@@ -13,7 +13,8 @@ chargify
 2. Add Ambassador_chargify.php file to your libraries folder.
 
 3. Set values for $username, $api_key and $campaign_uid variables.
-You can find them here: 
+You can find them here:
+
 * https://getambassador.com/c/general
 * https://getambassador.com/c/campaigns
 

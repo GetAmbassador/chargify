@@ -16,12 +16,17 @@ NOTE: **You must also have the ambassador javascript snippet on your payment suc
 
 2) Add ambassador_chargify.php file to your libraries folder.
 
-3) Set values for $username, $api_key and $campaign_uid variables.
+3) Set values for $username, $api_key and $campaign_uid variables, and add additional variables (optional).
 
 You can find them here:
 
 * https://getambassador.com/c/general
 * https://getambassador.com/c/campaigns
+
+Additional Variable Information located in API docs:
+
+* https://getAmbassador.com/api
+
 
 4) In your function which handles webhook data add this code:
 

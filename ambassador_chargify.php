@@ -11,6 +11,14 @@ class Ambassador_chargify {
 
 	public function __construct($debug = false, $campaign_uid = null) {
 
+		if (!function_exists('curl_init')) {
+			throw new Exception("CURL PHP extension is required");
+		}
+
+		if (!function_exists('json_decode')) {
+			throw new Exception("JSON PHP extension is required.");
+		}
+
 		$this->debug = $debug;
 
 		if (!is_null($campaign_uid)) {

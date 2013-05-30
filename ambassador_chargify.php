@@ -12,11 +12,11 @@ class Ambassador_chargify {
 	public function __construct($debug = false, $campaign_uid = null) {
 
 		if (!function_exists('curl_init')) {
-			throw new Exception("CURL PHP extension is required");
+			echo 'Error: CURL PHP extension is required';
 		}
 
 		if (!function_exists('json_decode')) {
-			throw new Exception("JSON PHP extension is required.");
+			echo 'Error: JSON PHP extension is required.';
 		}
 
 		$this->debug = $debug;
@@ -33,11 +33,19 @@ class Ambassador_chargify {
 	public function renewal($payload = null, $event = null) {
 
 		if (is_null($payload)) {
-			$payload = $_POST['payload'];
+
+			if (isset($_POST['payload'])) {
+
+				$payload = $_POST['payload'];
+			}
 		}
 
 		if (is_null($event)) {
-			$event = $_POST['event'];
+
+			if (isset($_POST['event'])) {
+				
+				$event = $_POST['event'];
+			}
 		}
 
 		if ($event === 'renewal_success') {

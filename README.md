@@ -47,4 +47,4 @@ $this->load->library('ambassador_chargify');
 $this->ambassador_chargify->renewal();
 ```
 
-5) Run your webhook URL in a browser to check if there are any errors displayed
+5) Run your webhook URL in a browser to check if there are any errors displayed. If you see blank page, it is ok.

@@ -51,12 +51,12 @@ class Ambassador_chargify {
 		if ($event === 'renewal_success') {
 
 			$data = array(
-				'campaign_uid'	=> $this->campaign_uid,
-				'revenue'		=> $payload['subscription']['balance_in_cents']/100,
-				'email'			=> $payload['subscription']['customer']['email'],
-				'first_name'	=> $payload['subscription']['customer']['first_name'],
-				'last_name'		=> $payload['subscription']['customer']['last_name'],
-				'auto_create'	=> 0
+				'campaign_uid' => $this->campaign_uid,
+				'revenue' => $payload['subscription']['balance_in_cents']/100,
+				'email'	=> $payload['subscription']['customer']['email'],
+				'first_name' => $payload['subscription']['customer']['first_name'],
+				'last_name' => $payload['subscription']['customer']['last_name'],
+				'auto_create' => 0
 			);
 			
 			$data = http_build_query($data);

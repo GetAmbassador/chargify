@@ -55,7 +55,8 @@ class Ambassador_chargify {
 				'revenue'		=> $payload['subscription']['balance_in_cents']/100,
 				'email'			=> $payload['subscription']['customer']['email'],
 				'first_name'	=> $payload['subscription']['customer']['first_name'],
-				'last_name'		=> $payload['subscription']['customer']['last_name']
+				'last_name'		=> $payload['subscription']['customer']['last_name'],
+				'auto_create'	=> 0
 			);
 			
 			$data = http_build_query($data);
